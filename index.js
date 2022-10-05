@@ -207,9 +207,9 @@ take_tour.onclick = function() {
     
     setTimeout(() => { window.scrollBy(0,sticky_point)}, 2000); //Tester
   
-    setTimeout(() => { window.scrollBy(0,sticky_point*0.5)}, 5000); // Developer
+    setTimeout(() => { window.scrollBy(0,sticky_point*0.9)}, 5000); // Developer
 
-    setTimeout(() => { window.scrollBy(0,sticky_point*1.5)}, 7000); //About
+    setTimeout(() => { window.scrollBy(0,sticky_point)}, 8000); //About
 
     setTimeout(() => { window.scrollBy(0,sticky_point*1.2)}, 12000); //Portfolio
   
