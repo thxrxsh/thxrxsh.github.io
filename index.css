@@ -1043,6 +1043,50 @@ button:hover {
 							/* Responcive to potrait */
 
 
+@media screen and (max-width:1025px) and (min-height:1024px) {
+	body {background-color:rgb(240, 240, 240) ;}
+	.top-nav-right {font-size: 2.7vw;}
+	.line {margin-top: 10vh;}
+	.tour-button {font-size: 5vw;}
+	.about_service-header-text{font-size: 6vw; padding-top: 7vh; padding-bottom:3vh ;}
+	.about_service-container {display:unset;}
+	.about, .service {width: 90%; height: max-content; padding-bottom: 1vh}
+	.about-header, .service-header {font-size: 4vh;}
+	.about-description p, .service-description p{font-size: 1.8vh;}
+	.sub-title {font-size: 1.8vw;}
+	.sub-title-description {min-height: max-content;font-size: 1.8vh;}
+	.service {margin-top: 50px;}
+	.portfolio-header h1{margin: 0px; height: 100px;}
+	.portfolio-header {left: 0; top:-75vh; font-size: 5vw; }
+	.portfolio-detailes-container {display:unset; float:left; height: max-content; width: 100%; transform: translateY(-65vh); z-index: 1;}
+	.work-tiles { width: 90%; margin-bottom: 50px; margin-left: auto; margin-right: auto;}
+	.work-tile-image {width: 100%; border: none; box-shadow: none;}
+	.work-tile-detailes-container {width: 100%;}
+	.work-tile-header {font-size: 40px;}
+	.work-tile-description {font-size: 25px; padding-bottom: 5px;}
+	.contact {z-index: 0;}
+	.contact-header {background-color: unset;}
+	.contact-header h1 {height:70px; transform: translateY(-43vh);}
+	.blank{display: none;}
+	.contact-detailes-container{transform: translateY(120vh);}
+	.contact-detailes-right, .contact-detailes-left {
+		transform: translateY(-130vh);
+		width: 100%; height: 60%;
+		text-align: center; }
+	.contact-detailes-left {height: 70%; padding-top: 6vh;}
+	input, textarea, button{float: none; font-size: 20px;}
+	input {height: 40px;}
+	button {font-size: 35px; width: 170px; height: 60px;}
+	.contact-icons-row {width: 100%;}
+	.contact-icons {margin-left: 3vw; margin-right: 3vw; height: 70px;}
+	.mail-and-whatsapp-row {width: 100%;}
+	.mail-and-whatsapp-row .contact-icons {height: 50px;}
+	.mail-section, .whatsapp-section {width: auto; text-align: center;}
+	.mail , .whatsapp {font-size: 25px; margin-left: 10px;}
+	.mail-section .contact-icons {margin-left: 10vw;}
+	.cv-and-other {text-align: center; width: 100%; font-size: 2.5vw;}
+	.cv-button {font-size: 30px; width: 230px; height: 50px; margin-left: auto; margin-right: auto;}
+}
 
 @media screen and (max-width:912px) {
 	body {background-color:rgb(240, 240, 240) ;}
