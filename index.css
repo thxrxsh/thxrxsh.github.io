@@ -1161,8 +1161,8 @@ button:hover {
 @media screen and (max-width:426px)  {
 	.contact-icons {height: 50px;}
 	.mail-and-whatsapp-row .contact-icons {height: 30px;}
-	button {font-size: 25px; height: 40px; width: 100px}
-	.cv-button {font-size: 25px; height: 35px; width:180px; padding-top: 3px;}
+	button {font-size: 25px; height: 40px; width: 110px}
+	.cv-button {font-size: 25px; height: 35px; width:180px; }
 }
 
 
