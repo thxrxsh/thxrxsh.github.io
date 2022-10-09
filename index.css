@@ -27,6 +27,47 @@ body {
 	padding: 0;
 }
 
+.pre-loader-area {
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	opacity: 1;
+}
+
+.pre-loader {
+	width: 20vw;
+	height:20vw ;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateY(40vh);
+
+}
+
+.pre-loader-block-line1, .pre-loader-block-line2 {
+	position: relative;
+	width: 20vw;
+	height:9vw ;
+}
+
+.pre-loader-block-line2 {
+	position: relative;
+	top: 2.5vw;
+}
+
+.pre-loader-blocks {
+	position: relative;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.5);
+	width:41% ;
+	height: 90%;
+
+}
+
+.block2, .block4 {
+	float: right;
+}
 
 
 .notification-area {
@@ -236,18 +277,11 @@ a {
 	transition: all 0.3s linear;
 }
 .image-row #image:hover img {
-	/* animation: move-up 0.1s normal both; */
+
 	border-color: white;
 
 }
 
-
-/* .image-row img:hover {
-	height: 210px;
-	width: 210px;
-	box-shadow: 0px 2px 20px 10px #242424;
-}
- */
 
 #name {
 	position: relative;
@@ -786,26 +820,45 @@ button:hover {
 /*Animations*/
 
 
+.block1 {
+	animation: blockAnimation 2s infinite 0s;
+  }
+  
+  .block2 {
+	animation: blockAnimation 2s infinite 0.5s;
+  }
+  
+  .block3 {
+	animation: blockAnimation 2s infinite 1.5s;
+  }
+  
+  .block4 {
+	animation: blockAnimation 2s infinite 1s;
+  }
+  
+
 .typing {
 	animation: typewriter 12s steps(26) 1.5s  infinite normal both,
 	blinkTextCursor 600ms steps(40) infinite normal;
 }
 
-/* .work-tiles:hover {
-	box-shadow: 5px 5px 30px 2px #000000;
-	animation: hoverTiles 0.5s steps(10) normal;
-} */
 
-
-@keyframes move-up {
+@keyframes blockAnimation {
 	0% {
-		top:10px
+	  scale: 1;
+	}
+	20% {
+	  scale: 1.2;
+	  background-color: rgba(255, 255, 255, 1);
+	}
+	40% {
+	  scale: 1;
 	}
 	100% {
-		top: 5px;
-		box-shadow: 0px 2px 20px 10px #242424;
+	  scale: 1;
 	}
-}
+  }
+
 
 
 @keyframes typewriter {
@@ -968,6 +1021,13 @@ button:hover {
 
 											/* Responcive to landscape */
 
+
+@media screen and (min-width:1024px) {
+	.pre-loader {width: 15vh; height: 15vh;}
+	.pre-loader-block-line1, .pre-loader-block-line2 {width: 15vh; height: 7.5vh;}	
+	.pre-loader-block-line2 {top: 1.5vh;}
+}
+		
 
 /* 2560px Wide Screens */
 

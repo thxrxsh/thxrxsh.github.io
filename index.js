@@ -43,6 +43,14 @@ var sticky_point = home_bac.offsetHeight;
 
 
 
+//     ---  Pre Loader ---
+
+window.addEventListener('load', function() {
+  this.document.querySelector('.pre-loader-area').style.display = 'none';
+});
+
+
+
 window.onscroll = function() {
   // topNavHide();
   headerChange();
