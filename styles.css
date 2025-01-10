@@ -1,0 +1,103 @@
+
+* {
+    cursor: default;
+    user-select: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+#binary-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.binary-row {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 255, 0, 0.05);
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+
+.binary-row span {
+    display: inline-block;
+    animation: slideX 100s linear infinite;
+}
+
+.binary-row:nth-child(even) span {
+    animation-direction: reverse;
+}
+
+.number {
+    transition: 1s;
+}
+
+.number:hover {
+    color: rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 5px #00ff0065, 0 0 10px #00ff0065;
+    transition: 0s;
+}
+
+@keyframes slideX {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#content {
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#contact a {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: large;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    #content {
+        width: 80vw;
+    }
+    
+}
